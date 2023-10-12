@@ -1,0 +1,408 @@
+* {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(212, 211, 211);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #191970;
+  color: #ffd700;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 13px;
+  font-size: 19px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  margin-inline: 20px;
+  color: wheat;
+  font-size: 20px;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #50c878;
+  font-weight: 600;
+}
+
+.icon {
+  display: none;
+  align-items: center;
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+/* main` */
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 155px;
+}
+
+.main img {
+  -webkit-mask-image: url('splash.png');
+  -webkit-mask-size: contain;
+}
+
+.mainText h1 {
+  font-size: 55px;
+  color: #191970;
+}
+
+.mainText h2 {
+  font-size: 33px;
+}
+
+.mainText button {
+  width: 120px;
+  height: 34px;
+  background-color: #191970;
+  color: wheat;
+  font-size: 18px;
+  border: none;
+}
+
+.mainText button:hover {
+  color: #50c878;
+  background-color: transparent;
+  color: black;
+  border: 2px solid #191970;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.cards .crd {
+  margin-inline: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.crd i {
+  color: rgb(248, 118, 3);
+  position: relative;
+  top: -11px;
+}
+
+.crd h3 {
+  margin-top: 1px;
+}
+
+.crd img {
+  width: 300px;
+  height: 340px;
+}
+
+.head {
+  padding: 65px;
+  text-align: center;
+}
+
+.head span {
+  color: #191970;
+}
+
+/* review */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reviews .rCard {
+  width: 260px;
+  height: 240px;
+  background-color: #fff;
+  text-align: center;
+  padding: 16px;
+  margin-inline: 20px;
+  background-color: white;
+}
+
+.rcard img {
+  width: 45%;
+  border-radius: 50%;
+  position: relative;
+  left: 100px;
+  top: 10px;
+}
+
+.reviews button {
+  background-color: #191970;
+  color: wheat;
+  width: 90px;
+  height: 30px;
+  border: 2px solid #191970;
+  font-size: 18px;
+  margin-top: 20px;
+  align-self: flex-end;
+  position: relative;
+  left: 140px;
+}
+
+.reviews button:hover {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+/* .blog */
+
+.blog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog .blogCard {
+  width: 300px;
+  text-align: centetr;
+  background-color: white;
+  margin-inline: 22px;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.blogCard:hover {
+  background-color: gray;
+  transition: 0.75s ease-in;
+  cursor: pointer;
+}
+
+.blogCard img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.blogCard a {
+  padding: 4px 20px;
+  background-color: #191970;
+  color: wheat;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.blogCard a:hover {
+  background-color: transparent;
+  border: 2px solid #191970;
+  color: black;
+}
+
+/* Contact */
+
+.connect {
+  text-align: center;
+}
+
+.connect input {
+  width: 380px;
+  padding: 8px;
+  font-size: 18px;
+  background-color: transparent;
+  margin-top: 11px;
+  border: 2px solid black;
+}
+
+.connect button {
+  width: 130px;
+  height: 36px;
+  background-color: #191970;
+  color: wheat;
+  font-size: 20px;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.connect button:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #191970;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #191970;
+  padding: 44px;
+  margin-top: 33px;
+  color: wheat;
+  flex-wrap: wrap;
+}
+
+/* item page css */
+
+.itemPage {
+  /* display: flex; */
+  display: none;
+  margin-top: 33px;
+  margin-left: 25px;
+}
+
+.itemPage img {
+  width: 400px;
+}
+
+.itemPage .itemText {
+  margin-inline: 24px;
+}
+
+.itemText h2 {
+  color: #191970;
+}
+
+.itemPage input {
+  width: 45px;
+  padding: 4px;
+  font-size: 20px;
+}
+
+.itemText a {
+  padding: 4px 20px;
+  background-color: #191970;
+  color: wheat;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#buyBtn {
+  cursor: pointer;
+}
+
+/* buy page css */
+
+.buyPage {
+  display: none;
+  width: 40%;
+  background-color: #fff;
+  padding: 22px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -15%;
+  border-radius: 7px;
+  transform: translate(-50%, 40%);
+}
+
+.buyText input {
+  width: 95%;
+  padding: 7px;
+  border: 2px solid black;
+  margin-top: 8px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.buyText button {
+  width: 120px;
+  height: 34px;
+  background-color: #191970;
+  color: wheat;
+  font-size: 20px;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.buyText select {
+  padding: 4px;
+  font-size: 18px;
+}
+
+.buyPage .cross {
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+
+  .icon {
+    display: flex;
+    cursor: pointer;
+  }
+  .showData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 58px;
+    background-color: #4682b4;
+    width: 100%;
+    height: 240px;
+    gap: 20px;
+    padding: 0%;
+    text-align: center;
+  }
+  .mainText h1 {
+    font-size: 30px;
+  }
+  .mainText h2 {
+    font-size: 20px;
+  }
+
+  .connect input {
+    width: 50%;
+  }
+
+  .footer {
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .main img {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .crd img {
+    width: 70%;
+  }
+}
